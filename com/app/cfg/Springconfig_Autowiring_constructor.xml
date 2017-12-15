@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+	xmlns:c="http://www.springframework.org/schema/c"  
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"    
+ 	xsi:schemaLocation="http://www.springframework.org/schema/beans      
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+		
+			<bean class="com.app.beans.Employee_cnstr" name="emp" autowire="constructor"
+			c:id="5"  
+			c:name="pratik"/>
+			
+			<bean class="com.app.beans.Address" name="addr">
+				<property name="addrId" value="1001"/>
+				<property name="location" value="Pune"/>
+			
+			</bean>
+	
+		</beans>
